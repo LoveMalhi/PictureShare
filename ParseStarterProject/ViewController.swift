@@ -2,7 +2,10 @@
 import UIKit
 import Parse
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIImagePickerControllerDelegate,UINavigationControllerDelegate {
+    var start: CGPoint?
+    var x = false
+let imagePicker = UIImagePickerController()
 
     @IBOutlet var username: UITextField!
     
@@ -68,22 +71,24 @@ class ViewController: UIViewController {
 
 
 
-//gallery button
-    @IBAction func Gallery(sender: AnyObject) {
-        imagePicker.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
-        presentViewController(imagePicker, animated: true, completion: nil)
-    }
-    //gallery button
-
+//imageview
    
-    
-    //camera button
+    @IBOutlet weak var imageView: UIImageView!
+
+  //camera button
+   
     @IBAction func openCAmera(sender: AnyObject) {
-imagePicker.sourceType = UIImagePickerControllerSourceType.Camera
-        presentViewController(imagePicker, animated: true, completion: nil)
+            imagePicker.sourceType = UIImagePickerControllerSourceType.Camera
+            presentViewController(imagePicker, animated: true, completion: nil)
+        
+    
+    
+    }
+  
+  
         //camera button
         
-    }
+    
     
     //image picker function to dissmiss camera after getting picture
     func  imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
@@ -91,6 +96,7 @@ imagePicker.sourceType = UIImagePickerControllerSourceType.Camera
                    self.dismissViewControllerAnimated(true, completion: nil)
         
        
+    
     }
     
     //image picker function to dissmiss camera  and photo library after getting picture
@@ -140,12 +146,14 @@ imagePicker.sourceType = UIImagePickerControllerSourceType.Camera
 
 
 
+
     
-    @IBOutlet weak var imageView: UIImageView!
+  
     
     
     override func viewDidLoad() {
-  
+        
+
         super.viewDidLoad()
         
     }
