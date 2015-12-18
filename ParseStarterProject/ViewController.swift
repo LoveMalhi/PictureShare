@@ -2,8 +2,14 @@
 import UIKit
 import Parse
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIImagePickerControllerDelegate,UINavigationControllerDelegate {
 
+    var imagePicker = UIImagePickerController()
+    
+    var start: CGPoint?
+    var x = false
+    
+    
     @IBOutlet var username: UITextField!
     
     @IBOutlet var errorLabel: UILabel!
@@ -68,30 +74,31 @@ class ViewController: UIViewController {
 
 
 
-//gallery button
-    @IBAction func Gallery(sender: AnyObject) {
-        imagePicker.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
-        presentViewController(imagePicker, animated: true, completion: nil)
-    }
-    //gallery button
-
+@IBOutlet weak var imageView: UIImageView!
+    
    
     
     //camera button
-    @IBAction func openCAmera(sender: AnyObject) {
+  
+    
+    @IBAction func openCamera(sender: AnyObject) {
+    
 imagePicker.sourceType = UIImagePickerControllerSourceType.Camera
         presentViewController(imagePicker, animated: true, completion: nil)
+      
+    }
         //camera button
         
-    }
+    
     
     //image picker function to dissmiss camera after getting picture
-    func  imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+    func  imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject])
+    {
         imageView.image = info[UIImagePickerControllerOriginalImage] as? UIImage
                    self.dismissViewControllerAnimated(true, completion: nil)
-        
+        }
        
-    }
+    
     
     //image picker function to dissmiss camera  and photo library after getting picture
     
@@ -136,12 +143,13 @@ imagePicker.sourceType = UIImagePickerControllerSourceType.Camera
 }
 
 
+    
 
 
 
 
     
-    @IBOutlet weak var imageView: UIImageView!
+
     
     
     override func viewDidLoad() {

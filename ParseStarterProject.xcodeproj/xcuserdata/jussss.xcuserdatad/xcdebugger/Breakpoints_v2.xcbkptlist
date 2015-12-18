@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ParseStarterProject/ViewController.swift"
+            timestampString = "472153454.985746"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ParseStarterProject.ViewController.username.getter : Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UITextField&gt;"
+                  moduleName = "ParseStarterProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jussss/Desktop/PictureShare/ParseStarterProject/ViewController.swift"
+                  timestampString = "472153881.619811"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ParseStarterProject.ViewController.username.setter : Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UITextField&gt;"
+                  moduleName = "ParseStarterProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jussss/Desktop/PictureShare/ParseStarterProject/ViewController.swift"
+                  timestampString = "472153881.619973"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "36">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ParseStarterProject.ViewController.username.materializeForSet : Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UITextField&gt;"
+                  moduleName = "ParseStarterProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jussss/Desktop/PictureShare/ParseStarterProject/ViewController.swift"
+                  timestampString = "472153881.620066"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ParseStarterProject.ViewController.init (ParseStarterProject.ViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; ParseStarterProject.ViewController"
+                  moduleName = "ParseStarterProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jussss/Desktop/PictureShare/ParseStarterProject/ViewController.swift"
+                  timestampString = "472153881.620152"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "292">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ParseStarterProject.ViewController.init (ParseStarterProject.ViewController.Type)(coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;ParseStarterProject.ViewController&gt;"
+                  moduleName = "ParseStarterProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jussss/Desktop/PictureShare/ParseStarterProject/ViewController.swift"
+                  timestampString = "472153881.620238"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "240">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ParseStarterProject/AppDelegate.swift"
+            timestampString = "472154099.541698"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "AppDelegate"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ParseStarterProject.AppDelegate.__deallocating_deinit"
+                  moduleName = "ParseStarterProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jussss/Desktop/PictureShare/ParseStarterProject/AppDelegate.swift"
+                  timestampString = "472154206.351344"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ParseStarterProject.AppDelegate.init (ParseStarterProject.AppDelegate.Type)() -&gt; ParseStarterProject.AppDelegate"
+                  moduleName = "ParseStarterProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jussss/Desktop/PictureShare/ParseStarterProject/AppDelegate.swift"
+                  timestampString = "472154206.351523"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "ParseStarterProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jussss/Desktop/PictureShare/ParseStarterProject/AppDelegate.swift"
+                  timestampString = "472154206.351627"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "44">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
