@@ -64,8 +64,71 @@ class ViewController: UIViewController {
             
         }
         
+
+    }
+
+//camera button
+    @IBAction func openCAmera(sender: AnyObject) {
+imagePicker.sourceType = UIImagePickerControllerSourceType.Camera
+        presentViewController(imagePicker, animated: true, completion: nil)
+        //camera button
+        
+    }
+
+//image picker function to dissmiss camera after getting picture
+    func  imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+        imageView.image = info[UIImagePickerControllerOriginalImage] as? UIImage
+                   self.dismissViewControllerAnimated(true, completion: nil)
+        
+       
     }
     
+    //image picker function to dissmiss camera  and photo library after getting picture
+
+ override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?)
+    {
+        let touch = touches.first as UITouch!
+        start = touch.locationInView(self.imageView)
+        
+    }
+
+override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?)
+    {
+        
+        let touch = touches.first as UITouch!
+        
+        let end = touch.locationInView(self.imageView)
+        if let s = self.start
+        {
+            draw (s, end: end)
+        }
+        
+        self.start = end
+        
+    }
+func draw(start: CGPoint, end: CGPoint)
+    {
+        UIGraphicsBeginImageContext(self.imageView.frame.size)
+        let context = UIGraphicsGetCurrentContext()
+        
+        
+        imageView?.image?.drawInRect(CGRect(x:0, y:0, width: imageView.frame.width,height: imageView.frame.height))
+        CGContextSetLineWidth(context, 6)
+        CGContextBeginPath(context)
+        CGContextMoveToPoint(context, start.x, start.y)
+        CGContextAddLineToPoint(context, end.x, end.y)
+        CGContextStrokePath(context)
+        let newImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        imageView.image = newImage
+    
+    
+}
+
+    
+
+
+
     @IBOutlet weak var imageView: UIImageView!
     
     
