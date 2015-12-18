@@ -59,9 +59,6 @@
                                 <color key="textColor" red="0.9803922176361084" green="0.13725490868091583" blue="0.11372549831867218" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Z7V-uz-4lm">
-                                <rect key="frame" x="10" y="242" width="297" height="318"/>
-                            </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p5a-UY-fBo">
                                 <rect key="frame" x="29" y="160" width="269" height="30"/>
                                 <constraints>
@@ -71,23 +68,33 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OHa-82-xsP">
+                                <rect key="frame" x="122" y="467" width="55" height="30"/>
+                                <state key="normal" title="CAmera"/>
+                                <connections>
+                                    <action selector="openCamera:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tvh-bN-Fl6"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Z7V-uz-4lm">
+                                <rect key="frame" x="7" y="234" width="305" height="214"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="Z7V-uz-4lm" secondAttribute="trailing" constant="-3" id="2q1-TK-eB3"/>
-                            <constraint firstItem="Z7V-uz-4lm" firstAttribute="centerX" secondItem="Du0-H5-r2K" secondAttribute="centerX" id="D7t-cm-BaK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Z7V-uz-4lm" secondAttribute="trailing" constant="-8" id="2q1-TK-eB3"/>
+                            <constraint firstItem="Z7V-uz-4lm" firstAttribute="centerX" secondItem="Du0-H5-r2K" secondAttribute="centerX" constant="1.5" id="D7t-cm-BaK"/>
                             <constraint firstItem="MjA-MA-1fK" firstAttribute="top" secondItem="Du0-H5-r2K" secondAttribute="bottom" constant="61" id="RF9-JS-K2p"/>
                             <constraint firstItem="Du0-H5-r2K" firstAttribute="top" secondItem="p5a-UY-fBo" secondAttribute="bottom" constant="14" id="RJx-38-2Ye"/>
                             <constraint firstItem="OT7-OR-9vR" firstAttribute="top" secondItem="IMC-C7-kJK" secondAttribute="bottom" constant="8" id="X4Y-07-u0P"/>
-                            <constraint firstItem="Z7V-uz-4lm" firstAttribute="top" secondItem="Du0-H5-r2K" secondAttribute="bottom" constant="8" symbolic="YES" id="bMD-rf-Hjq"/>
-                            <constraint firstItem="Z7V-uz-4lm" firstAttribute="centerX" secondItem="OT7-OR-9vR" secondAttribute="centerX" id="bgO-pU-uUG"/>
+                            <constraint firstItem="Z7V-uz-4lm" firstAttribute="top" secondItem="Du0-H5-r2K" secondAttribute="bottom" id="bMD-rf-Hjq"/>
+                            <constraint firstItem="Z7V-uz-4lm" firstAttribute="centerX" secondItem="OT7-OR-9vR" secondAttribute="centerX" constant="1.5" id="bgO-pU-uUG"/>
                             <constraint firstItem="p5a-UY-fBo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="13" id="erO-7Z-hpa"/>
                             <constraint firstItem="MjA-MA-1fK" firstAttribute="leading" secondItem="p5a-UY-fBo" secondAttribute="leading" constant="-3" id="my4-3I-es1"/>
-                            <constraint firstItem="Z7V-uz-4lm" firstAttribute="centerX" secondItem="IMC-C7-kJK" secondAttribute="centerX" id="psF-9J-xQJ"/>
+                            <constraint firstItem="Z7V-uz-4lm" firstAttribute="centerX" secondItem="IMC-C7-kJK" secondAttribute="centerX" constant="1.5" id="psF-9J-xQJ"/>
                             <constraint firstItem="p5a-UY-fBo" firstAttribute="top" secondItem="OT7-OR-9vR" secondAttribute="bottom" constant="18" id="tLL-Y1-awH"/>
                             <constraint firstItem="IMC-C7-kJK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="ybl-x3-zhu"/>
-                            <constraint firstItem="Z7V-uz-4lm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-6" id="yng-3b-FKZ"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Z7V-uz-4lm" secondAttribute="bottom" constant="8" symbolic="YES" id="ysO-az-42s"/>
+                            <constraint firstItem="Z7V-uz-4lm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-9" id="yng-3b-FKZ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Z7V-uz-4lm" secondAttribute="bottom" constant="120" id="ysO-az-42s"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
