@@ -4,6 +4,10 @@ import Parse
 
 class ViewController: UIViewController {
 
+    var start: CGPoint?
+    var x = false
+    
+    let imagePicker = UIImagePickerController()
     @IBOutlet var username: UITextField!
     
     @IBOutlet var errorLabel: UILabel!
@@ -78,7 +82,9 @@ class ViewController: UIViewController {
    
     
     //camera button
-    @IBAction func openCAmera(sender: AnyObject) {
+    @IBAction func openCamera(sender: AnyObject) {
+    
+   
 imagePicker.sourceType = UIImagePickerControllerSourceType.Camera
         presentViewController(imagePicker, animated: true, completion: nil)
         //camera button
